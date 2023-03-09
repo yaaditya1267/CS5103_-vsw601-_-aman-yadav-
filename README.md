@@ -1,1 +1,7 @@
-# CS5103_-vsw601-_-aman-yadav-
+Professor: Xiaoyin Wang
+Date: 2023/03/10
+Course: Software Engineering
+Course Code: CS 5103
+(AMAN KUMAR YADAV (VSW601))
+
+
