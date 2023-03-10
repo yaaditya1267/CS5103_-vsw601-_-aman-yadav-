@@ -14,7 +14,7 @@ def convert_to_uppercase():
     # It converts to uppercase
     output_text = input_text.upper()
 
-    # It writes output to file called input_uppercase.txt
+    # It writes output to file called output_uppercase.txt
     with open("output_uppercase.txt", "w", encoding="utf-8") as file:
         file.write(output_text.rstrip())
 
