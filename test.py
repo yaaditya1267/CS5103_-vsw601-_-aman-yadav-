@@ -1,3 +1,6 @@
+"""
+Created by: Aman kumar yadav(vsw601)
+"""
 import unittest
 from main import count_word_number, count_char_number, count_uppercase_letters
 
@@ -26,9 +29,9 @@ class wd_count(unittest.TestCase):
         with open("input2.txt", "r") as f:
             input_text = f.read()
         output_text = input_text.upper()
-        with open("input_uppercase.txt", "w") as f:
+        with open("output_uppercase.txt", "w") as f:
             f.write(output_text)
-        with open("input_uppercase.txt", "r") as f:
+        with open("output_uppercase.txt", "r") as f:
             output_file_contents = f.read()
         self.assertEqual(output_file_contents, "ONCE UPON A TIME ")
 
