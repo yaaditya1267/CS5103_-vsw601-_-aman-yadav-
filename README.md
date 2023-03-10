@@ -1,6 +1,6 @@
 CS5103 Software Engineering : Course Project
 --------------------------------------------
-Aman Kumar Yadav, vsw601
+Aman Kumar Yadav, VSW601
 ------------------------
 Professor: Xiaoyin Wang
 -----------------------
