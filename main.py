@@ -47,20 +47,16 @@ def count_char_number(filename):
 
     # It creates an empty dictionary to store the counts
     char_count = {}
-    # It loops through each character in the text
     for char in text:
         # It checks if the character is a printable character
         if char in string.printable:
             # It checks if the character is already in the dictionary
             if char in char_count:
-                # If so, increment the count by 1
+                # It basically increment the count by 1
                 char_count[char] += 1
             else:
-                # If not, add the character to the dictionary with a count of 1
                 char_count[char] = 1
     return char_count
-
-
 
 
 def count_word_number(text):
@@ -87,7 +83,7 @@ def count_word_number(text):
 
 
 if __name__ == '__main__':
-    # It reads the text from the input file.
+    # It basically reads the text from the input file.
     with open('input.txt', 'r', encoding='utf-8') as f:
         document = f.read()
 
