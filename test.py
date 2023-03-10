@@ -20,6 +20,18 @@ class wd_count(unittest.TestCase):
         with open(input_file, 'w') as f:
             f.write('once upon a Time aman was Playing football and was cricket')
         self.assertEqual(count_uppercase_letters(input_file), output)
+    
+
+    def test_convert_to_uppercase(self):
+        with open("input2.txt", "r") as f:
+            input_text = f.read()
+        output_text = input_text.upper()
+        with open("input_uppercase.txt", "w") as f:
+            f.write(output_text)
+        with open("input_uppercase.txt", "r") as f:
+            output_file_contents = f.read()
+        self.assertEqual(output_file_contents, "ONCE UPON A TIME ")
+
 
 
 if __name__ == '__main__':
