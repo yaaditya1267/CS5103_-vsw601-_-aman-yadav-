@@ -14,9 +14,8 @@ TEST CASE 1
 TEST CASE DESCRIPTION
 ---------------------
 
-1.Enter a string or text into the python program.
-2.The program returns the count frequencey of each unique word as output.
-3.It should be able to read across spaces, tabs, and newline characters as separators.
+In this following unit test you need to enter a string that basically returns the count/frequency of each unique words and it can also read across spaces,tabs and newline character as seperator.
+
 TEST DATA
 
 Input String: once upon a time aman was  playing football and was cricket
@@ -30,10 +29,9 @@ TEST CASE 2
 TEST CASE DESCRIPTION
 ---------------------
 
-1.Enter a string or text into the python program.
-2.The program returns the count frequencey of each character as output.
-3.It should be able to count spaces, tabs, and newline characters as separators.
-4.Print all characters count present in string.
+
+In this following unit test you need to enter a string that basically returns the count/frequency of each unique character and it can also read across spaces,tabs and newline character as seperator.
+
 TEST DATA
 
 Input String: once upon a Time aman was Playing football and was cricket
@@ -47,8 +45,7 @@ TEST CASE 3
 TEST CASE DESCRIPTION
 ---------------------
 
-1.Enter a string or text into the python program.
-2.The program returns the count frequencey of uppercase characters as output.
+In this following test you need to enter a string that basically returns the count/frequency of uppercase character present in the input.
 
 TEST DATA
 
@@ -63,8 +60,8 @@ TEST CASE 4
 TEST CASE DESCRIPTION
 ---------------------
 
-1.Enter a string or text into the python program.
-2.The program will convert all lowercase to uppercase as output.
+
+In this following unit test you need to enter a string that basically returns the new .txt file by converting all lowercase character into uppercase.
 
 TEST DATA
 
