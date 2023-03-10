@@ -3,6 +3,25 @@ Created by: Aman kumar yadav(vsw601)
 """
 import string
 
+def convert_to_uppercase():
+    """
+    It converts all the lowercase word to uppercase.
+    """
+   
+    with open("input2.txt", "r", encoding="utf-8") as file:
+        input_text = file.read()
+
+    # It converts to uppercase
+    output_text = input_text.upper()
+
+    # It writes output to file called input_uppercase.txt
+    with open("input_uppercase.txt", "w", encoding="utf-8") as file:
+        file.write(output_text.rstrip())
+
+    # It returns output
+    return output_text
+
+
 
 def count_uppercase_letters(filename):
     """
@@ -23,24 +42,22 @@ def count_char_number(filename):
     It returns the frequency of each character in the given file.
     It returns dictionary with character count.
     """
-    # Open and read the file
     with open(filename, "r", encoding="utf-8") as file:
         text = file.read()
 
-    # Create an empty dictionary to store the counts
+    # It creates an empty dictionary to store the counts
     char_count = {}
-    # Loop through each character in the text
+    # It loops through each character in the text
     for char in text:
-        # Check if the character is a printable ASCII character
+        # It checks if the character is a printable character
         if char in string.printable:
-            # Check if the character is already in the dictionary
+            # It checks if the character is already in the dictionary
             if char in char_count:
                 # If so, increment the count by 1
                 char_count[char] += 1
             else:
                 # If not, add the character to the dictionary with a count of 1
                 char_count[char] = 1
-    # Return the dictionary of character counts
     return char_count
 
 
@@ -79,7 +96,7 @@ if __name__ == '__main__':
     CHAR_COUNT = count_char_number('input1.txt')
     WORD_COUNT = count_word_number(document)
 
-    # It print the count for each unique word.
+    # It prints the count for each unique word.
     print(f"{'Word':<15}{'Frequency'}")
     print("-" * 25)
     for w_ord, freq in WORD_COUNT.items():
