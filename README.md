@@ -51,6 +51,20 @@ EXPECTED RESULTS
 
 Output: 2
 
+TEST CASE 4
+TEST CASE DESCRIPTION
+
+1.Enter a string or text into the python program.
+2.The program will convert all lowercase to uppercase as output.
+
+TEST DATA
+
+Input String: once upon a time 
+
+EXPECTED RESULTS
+
+Output: ONCE UPON A TIME 
+
 How to run program
 On Terminal 
 
@@ -62,6 +76,4 @@ The program will execute and will print the output accordingly to the text taken
 It prints the the count of unique words.
 
 And hence accordingly.
-
-
 
