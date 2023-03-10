@@ -1,0 +1,8 @@
+amanyadav@amans-mbp sd % pylint main.py
+************* Module main
+main.py:14:8: W0621: Redefining name 'document' from outer scope (line 78) (redefined-outer-name)
+
+------------------------------------------------------------------
+Your code has been rated at 9.74/10 (previous run: 9.74/10, +0.00)
+
+amanyadav@amans-mbp sd % 

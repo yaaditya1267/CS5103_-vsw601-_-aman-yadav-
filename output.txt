@@ -1,0 +1,12 @@
+Word           Frequency
+-------------------------
+once           1
+upon           1
+a              1
+time           1
+aman           1
+was            2
+playing        1
+football       1
+and            1
+cricket        1
