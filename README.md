@@ -9,6 +9,14 @@ Checkpoint: 3/10/2023
 Language:Python3
 -------------------------------------------------------------------------------------------------------
 
+
+PROJECT DESCRIPTION:
+-------------------
+
+Strings and Words: In this project I are writing a program to perform various word statistics of a given document (as a string). The initial requirement is to count the frequency of each unique word. The code should support combinations of space, tab, and newline characters as separators.
+
+
+
 TEST CASE 1
 -----------
 TEST CASE DESCRIPTION
