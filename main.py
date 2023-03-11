@@ -23,7 +23,7 @@ def convert_to_uppercase():
 
 
 
-def count_uppercase_letters(filename):
+def count_uppercase(filename):
     """
     It returns the number of uppercase letters in a given file.
     It returns Number of uppercase letters.
