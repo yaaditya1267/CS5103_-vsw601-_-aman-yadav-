@@ -2,7 +2,7 @@
 Created by: Aman kumar yadav(vsw601)
 """
 import unittest
-from main import count_word_number, count_char_number, count_uppercase_letters
+from main import count_word_number, count_char_number, count_uppercase
 
 class wd_count(unittest.TestCase):
     def test_count_word(self):
@@ -22,7 +22,7 @@ class wd_count(unittest.TestCase):
         output = 2
         with open(input_file, 'w') as f:
             f.write('once upon a Time aman was Playing football and was cricket')
-        self.assertEqual(count_uppercase_letters(input_file), output)
+        self.assertEqual(count_uppercase(input_file), output)
     
 
     def test_convert_to_uppercase(self):
