@@ -85,7 +85,7 @@ Please make sure Python3 is installed before you start.
 
 Change directory to where 'main.py' is located. 
 Enter 'python3 main.py' on terminal to run python file.
-The program will execute and will print the output accordingly to the text taken as input. 
+The program will execute and will print the output accordingly to the string taken as input. 
 It prints the count of unique words.
 
 And  I have also performed bug detection using PYLINT.
