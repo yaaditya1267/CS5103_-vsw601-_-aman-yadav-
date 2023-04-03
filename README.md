@@ -83,6 +83,19 @@ EXPECTED RESULT
 Output: Number of Character: 18
         Number of lines.   : 3
 
+
+
+#How to run program on Terminal :-
+----------------------------------------------------------------------------------------------------
+
+Please make sure Python3 is installed before you start.
+
+Change directory to where 'main.py' is located. 
+Enter 'python3 main.py' on terminal to run python file.
+The program will execute and will print the output accordingly to the input document taken as input. 
+It prints the count of unique words, count of character, and count of lines.
+
+
 AND I HAVE ALSO PERFORMED BUG DETECTION USING PYLINT.
 ------------------------------------------------------
 
