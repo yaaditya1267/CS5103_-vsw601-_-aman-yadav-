@@ -1,8 +1,10 @@
-amanyadav@amans-mbp sd %  /usr/bin/env /opt/homebrew/bin/python3 /Users/amanyada
-v/.vscode/extensions/ms-python.python-2022.16.1/pythonFiles/lib/python/debugpy/a
-dapter/../../debugpy/launcher 63257 -- /Users/amanyadav/Desktop/sd/test.py 
-....
+amanyadav@amans-mbp CS5103_VSW601_AMANKUMARYADAV 2 %  cd /Users/amanyadav/Deskto
+p/CS5103_VSW601_AMANKUMARYADAV\ 2 ; /usr/bin/env /opt/homebrew/bin/python3 /User
+s/amanyadav/.vscode/extensions/ms-python.python-2022.16.1/pythonFiles/lib/python
+/debugpy/adapter/../../debugpy/launcher 60479 -- /Users/amanyadav/Desktop/CS5103
+_VSW601_AMANKUMARYADAV\ 2/test.py 
+.......
 ----------------------------------------------------------------------
-Ran 4 tests in 0.002s
+Ran 7 tests in 0.002s
 
 OK
