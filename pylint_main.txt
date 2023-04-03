@@ -5,4 +5,3 @@ main.py:32:8: W0621: Redefining name 'document' from outer scope (line 94) (rede
 ------------------------------------------------------------------
 Your code has been rated at 9.78/10 (previous run: 9.56/10, +0.22)
 
-amanyadav@amans-mbp sd % 
