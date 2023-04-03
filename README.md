@@ -51,8 +51,10 @@ TEST CASE DESCRIPTION
 
 TEST DATA
 ---------
-Input: Hello 
+Input: Hello
+
        world
+       
        everyone
 
 EXPECTED RESULT
@@ -67,7 +69,7 @@ TEST CASE DESCRIPTION
 
 1. Input a text document into program
 2. The program returns the count of each character and count of lines present in the input document.
-3. 3. It should be able to read across spaces, tabs, and newline character as seperators.
+3. It should be able to read across spaces, tabs, and newline character as seperators.
 
 
 TEST DATA
