@@ -51,7 +51,8 @@ TEST CASE DESCRIPTION
 
 TEST DATA
 ---------
-Input: Hello
+Input: 
+       Hello
 
        world
        
