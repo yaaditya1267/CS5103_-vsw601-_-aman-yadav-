@@ -52,6 +52,7 @@ TEST CASE DESCRIPTION
 TEST DATA
 ---------
 Input: 
+       
        Hello
 
        world
@@ -75,8 +76,12 @@ TEST CASE DESCRIPTION
 
 TEST DATA
 ---------
-Input: Hello 
+Input: 
+
+       Hello 
+       
        world
+       
        everyone
 
 EXPECTED RESULT
