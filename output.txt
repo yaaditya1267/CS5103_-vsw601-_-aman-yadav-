@@ -1,7 +1,7 @@
 -------------------------
-Number of lines:       6
+Number of lines:      9
 -------------------------
-Number of characters:  9
+Number of characters: 50
 -------------------------
 Word           Frequency
 -------------------------
