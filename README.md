@@ -9,6 +9,85 @@ Checkpoint: 3/10/2023
 Language:Python3
 -------------------------------------------------------------------------------------------------------
 
+************************
+-------------------------------------------------------------------------------------------------------
+FIRST REQUIREMENT CHANGE
+--------------------------------------------------------------------------------------------------------
+Requirement Title:
+------------------
+Project 1: Word Statistics
+--------------------------
+Provide two more features: Counting the number of lines (LineCount) and Counting the number of characters (CharCount).
+----------------------------------------------------------------------------------------------------------------------
+
+
+
+TEST CASE 1
+-----------
+TEST CASE DESCRIPTION
+---------------------
+
+1. Input a text document into program.
+2. The program replaces the character of input file into specified character.
+3. It should be able to read across spaces, tabs, and newline character as seperators.
+
+TEST DATA
+---------
+Input: Htllo tvtryont
+
+EXPECTED RESULT
+---------------
+Output: Hello World
+
+
+TEST CASE 2
+-----------
+TEST CASE DESCRIPTION
+---------------------
+
+1. Input a text document into program
+2. The program merges/combines all the lines into one single line.
+3. It should be able to read across spaces, tabs, and newline character as seperators.
+
+TEST DATA
+---------
+Input: Hello 
+       world
+       everyone
+
+EXPECTED RESULT
+---------------
+Output: Hello world everyone
+
+
+TEST CASE 3
+-----------
+TEST CASE DESCRIPTION
+---------------------
+
+1. Input a text document into program
+2. The program returns the count of each character and count of lines present in the input document.
+3. 3. It should be able to read across spaces, tabs, and newline character as seperators.
+
+
+TEST DATA
+---------
+Input: Hello 
+       world
+       everyone
+
+EXPECTED RESULT
+---------------
+Output: Number of Character: 18
+        Number of lines.   : 3
+
+AND I HAVE ALSO PERFORMED BUG DETECTION USING PYLINT.
+------------------------------------------------------
+
+
+
+
+
 
 PROJECT DESCRIPTION:
 -------------------
@@ -88,6 +167,4 @@ Enter 'python3 main.py' on terminal to run python file.
 The program will execute and will print the output accordingly to the string taken as input. 
 It prints the count of unique words.
 
-And  I have also performed bug detection using PYLINT.
---------------------------------------------------------------------------------------------------------
 
