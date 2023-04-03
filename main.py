@@ -3,11 +3,40 @@ Created by: Aman kumar yadav(vsw601)
 """
 import string
 
+
+def merge_input(input_str):
+    """
+    It merges the input into one line.
+    """
+    lines = [line.strip() for line in input_str.split('\n')]
+    # It removes any empty lines from the list
+    lines = [line for line in lines if line]
+    merged = ''.join(lines)
+    merged = merged.capitalize()
+    # It adds a space between the merged words
+    merged = ' '.join(merged.split())
+    return f"({merged})"
+
+
+
+
+def count_lines_and_characters():
+    """
+    It counts the number of line and number of character present.
+    """
+    with open("input6.txt", "r", encoding="utf-8") as file:
+        text = file.read()
+    lines = text.split('\n')
+    num_lines = len(lines)
+    num_chars = len(text)
+    return num_lines, num_chars
+
+
+
 def convert_to_uppercase():
     """
     It converts all the lowercase word to uppercase.
     """
-   
     with open("input2.txt", "r", encoding="utf-8") as file:
         input_text = file.read()
 
@@ -35,6 +64,30 @@ def count_uppercase(filename):
             if char.isupper():
                 count += 1
         return count
+
+
+
+def count_lines(text):
+    """
+    It counts the number of lines.
+    """
+    lines = text.split('\n')
+    return len(lines)
+
+
+def count_characters(text):
+    """
+    It counts the number of character.
+    """
+    characters = 0
+    for char in text:
+        if char != ' ' and char != '\n':
+            characters += 1
+    return characters
+
+# Read input from file
+with open("input4.txt", "r", encoding="utf-8") as file:
+    text = file.read()
 
 
 def count_char_number(filename):
@@ -88,13 +141,20 @@ if __name__ == '__main__':
         document = f.read()
 
     # It counts the number of uppercase letters, characters, and words.
-    UPPERCASE_COUNT = count_uppercase_letters('input1.txt')
+    UPPERCASE_COUNT = count_uppercase('input1.txt')
     CHAR_COUNT = count_char_number('input1.txt')
     WORD_COUNT = count_word_number(document)
+    line_count = count_lines(text)
+    char_count = count_characters(text)
 
     # It prints the count for each unique word.
+    print("-" * 25)
+    print(f"Number of lines: {line_count}")
+    print("-" * 25)
+    print(f"Number of characters: {char_count}")
+    print("-" * 25)
     print(f"{'Word':<15}{'Frequency'}")
     print("-" * 25)
     for w_ord, freq in WORD_COUNT.items():
         print(f"{w_ord:<15}{freq}")
-    print("\n")
+    print("-" * 25)
