@@ -79,9 +79,7 @@ TEST DATA
 Input: 
 
        Hello 
-       
        world
-       
        everyone
 
 EXPECTED RESULT
