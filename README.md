@@ -13,12 +13,10 @@ Language:Python3
 -------------------------------------------------------------------------------------------------------
 FIRST REQUIREMENT CHANGE
 --------------------------------------------------------------------------------------------------------
-Requirement Title:
-------------------
+Requirement Title: Provide two more features: Counting the number of lines (LineCount) and Counting the number of characters (CharCount).
+-----------------------------------------------------------------------------------------------------------------------------------------
 Project 1: Word Statistics
 --------------------------
-Provide two more features: Counting the number of lines (LineCount) and Counting the number of characters (CharCount).
-----------------------------------------------------------------------------------------------------------------------
 
 
 
