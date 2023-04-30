@@ -2,7 +2,7 @@
 Created by: Aman kumar yadav(vsw601)
 """
 import unittest
-from main import count_word_number, count_char_number, count_uppercase, count_lines_and_characters, merge_input
+from main import count_word_number, count_char_number, count_uppercase, count_lines_and_characters, merge_input, replace_word, replace_word_in_first
 
 class wd_count(unittest.TestCase):
     def test_count_word(self):
@@ -59,7 +59,38 @@ class wd_count(unittest.TestCase):
             output_str = output_file.read().strip()
         self.assertEqual(output_str, expected)
 
-
+    def test_multiple_occurrences(self):
+        text = "The man was after the other man."
+        pattern = "man"
+        replacement = "women"
+        expected_output = "The women was after the other women."
+        actual_output = replace_word(text, pattern, replacement)
+        self.assertEqual(actual_output, expected_output)
     
+    def test_no_replacement_for_punctuated_word(self):
+        text = "Once, upon a time someone came Twice?"
+        pattern = "Twice"
+        replacement = "Once"
+        expected_output = "Once, upon a time someone came Once?"
+        actual_output = replace_word(text, pattern, replacement)
+        self.assertEqual(actual_output, expected_output)
+   
+    
+    def test_replace_numbers(self):
+        text = "The price of the book is $11.99 and pen is also $11.99."
+        pattern = "11.99"
+        replacement = "15.99"
+        expected_output = "The price of the book is $15.99 and pen is also $15.99."
+        actual_output = replace_word(text, pattern, replacement)
+        self.assertEqual(actual_output, expected_output)
+
+    def test_replace_word_in_first_line_only(self):
+        text = "This is the first line in This\nThis is the second line in This\nThis is the third line in This"
+        pattern = "This"
+        replacement = "That"
+        expected_output = "That is the first line in That\nThis is the second line in This\nThis is the third line in This"
+        actual_output = replace_word_in_first(text, pattern, replacement)
+        self.assertEqual(actual_output, expected_output)
+
 if __name__ == '__main__':
     unittest.main()
