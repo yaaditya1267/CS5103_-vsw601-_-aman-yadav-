@@ -4,12 +4,140 @@ Aman Kumar Yadav, VSW601
 ------------------------
 Professor: Xiaoyin Wang
 -----------------------
-Checkpoint: 3/10/2023
+Checkpoint: 4/30/2023
 ----------------------
 Language:Python3
 -------------------------------------------------------------------------------------------------------
 
 ************************
+-------------------------------------------------------------------------------------------------------
+SECOND REQUIREMENT CHANGE
+--------------------------------------------------------------------------------------------------------
+Requirement Title: Word Statistics: The second requirement change is to allow replacement of all occurrences of a given word to a given replacement word. Note that the replacement happens only when the given pattern word matches with a whole word. For example, for text “ab cd ef”, replace “a” with “b” will result in no change, while replace “ab” with “cd” will result in “cd cd ef”.
+-----------------------------------------------------------------------------------------------------------------------------------------
+Project 1: Word Statistics
+--------------------------
+
+
+
+TEST CASE 1 ---> Replace word in first line only.
+-----------
+TEST CASE DESCRIPTION
+---------------------
+
+1. Input a text document into program.
+2. The program replaces the specified word from the first line only.
+3. It should be able to replace only when given pattern word matches with the whole word.
+
+TEST DATA
+---------
+Original Text: 
+       This is hello world
+       This is hello world
+       This is hello world.
+       
+Pattern: This
+
+Replacement word: That
+
+
+EXPECTED RESULT
+---------------
+Output: 
+       That is hello world
+       This is hello world
+       This is hello world.
+
+
+
+TEST CASE 2 ---> No replacement for punctuated word
+-----------
+TEST CASE DESCRIPTION
+---------------------
+
+1. Input a text document into program.
+2. The program shouldn't replaces the specified word if it contains any punctuation with it.
+3. There should be no change at all.
+
+TEST DATA
+---------
+Original Text: one man, is after another man?
+       
+       
+Pattern: man
+
+Replacement word: women
+
+
+EXPECTED RESULT
+---------------
+Output: one man, is after another man?
+       
+
+
+TEST CASE 3 ---> Replace multiple occurence word
+-----------
+TEST CASE DESCRIPTION
+---------------------
+
+1. Input a text document into program.
+2. The program should be able to replace the multi occurrence word.
+3. If the same word has been present in the text multiple times then all the matching word should be replaced .
+
+TEST DATA
+---------
+Original Text: one man is after another man
+       
+       
+Pattern: man
+
+Replacement word: women
+
+
+EXPECTED RESULT
+---------------
+Output: one women is after another women
+
+
+
+TEST CASE 4 ---> Replace numbers.
+-----------
+TEST CASE DESCRIPTION
+---------------------
+
+1. Input a text document into program.
+2. The program should be able to replace the numbers.
+3. If the numbers are present in the text then, it should replace the numbers too.
+
+TEST DATA
+---------
+Original Text: one man buys a pen for 11.99 and book for 11.99 respectively.
+       
+       
+Pattern: 11.99
+
+Replacement word: 15.99
+
+
+EXPECTED RESULT
+---------------
+Output: one man buys a pen for 15.99 and book for 15.99 respectively.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 -------------------------------------------------------------------------------------------------------
 FIRST REQUIREMENT CHANGE
 --------------------------------------------------------------------------------------------------------
