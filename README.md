@@ -11,7 +11,7 @@ Language:Python3
 
 ************************
 -------------------------------------------------------------------------------------------------------
-SECOND REQUIREMENT CHANGE
+SECOND REQUIREMENT CHANGE:
 --------------------------------------------------------------------------------------------------------
 Requirement Title: Word Statistics: The second requirement change is to allow replacement of all occurrences of a given word to a given replacement word. Note that the replacement happens only when the given pattern word matches with a whole word. For example, for text “ab cd ef”, replace “a” with “b” will result in no change, while replace “ab” with “cd” will result in “cd cd ef”.
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -32,6 +32,7 @@ TEST CASE DESCRIPTION
 TEST DATA
 ---------
 Original Text: 
+
        This is hello world
        This is hello world
        This is hello world.
@@ -44,6 +45,7 @@ Replacement word: That
 EXPECTED RESULT
 ---------------
 Output: 
+
        That is hello world
        This is hello world
        This is hello world.
@@ -61,7 +63,9 @@ TEST CASE DESCRIPTION
 
 TEST DATA
 ---------
-Original Text: one man, is after another man?
+Original Text: 
+
+       one man, is after another man?
        
        
 Pattern: man
@@ -71,7 +75,9 @@ Replacement word: women
 
 EXPECTED RESULT
 ---------------
-Output: one man, is after another man?
+Output: 
+
+       one man, is after another man?
        
 
 
@@ -86,7 +92,9 @@ TEST CASE DESCRIPTION
 
 TEST DATA
 ---------
-Original Text: one man is after another man
+Original Text: 
+
+       one man is after another man
        
        
 Pattern: man
@@ -96,7 +104,9 @@ Replacement word: women
 
 EXPECTED RESULT
 ---------------
-Output: one women is after another women
+Output: 
+
+       one women is after another women
 
 
 
@@ -111,7 +121,9 @@ TEST CASE DESCRIPTION
 
 TEST DATA
 ---------
-Original Text: one man buys a pen for 11.99 and book for 11.99 respectively.
+Original Text: 
+
+       one man buys a pen for 11.99 and book for 11.99 respectively.
        
        
 Pattern: 11.99
@@ -121,19 +133,50 @@ Replacement word: 15.99
 
 EXPECTED RESULT
 ---------------
-Output: one man buys a pen for 15.99 and book for 15.99 respectively.
+Output: 
+
+       one man buys a pen for 15.99 and book for 15.99 respectively.
+
+
+
+
+
+<img width="422" alt="Screenshot 2023-04-30 at 5 49 43 PM" src="https://user-images.githubusercontent.com/54935006/235379592-3784c421-6113-4051-a746-d324fde4c3ba.png">
+<img width="722" alt="Screenshot 2023-04-30 at 5 47 03 PM" src="https://user-images.githubusercontent.com/54935006/235379453-5b3814a9-d215-4141-bd90-59ed475f3212.png">
+
+
+
+
+Code Detection/Bug Detection Report On SPYDER:
+-----------------------------------------------
+
+
+<img width="458" alt="Screenshot 2023-04-30 at 5 39 35 PM" src="https://user-images.githubusercontent.com/54935006/235379217-3cab8361-ee7c-46a8-8ece-4cae19fe8b20.png">
+
+Code Detection/Bug Detection Report On PYLINT:
+----------------------------------------------
+
+<img width="777" alt="Screenshot 2023-04-30 at 1 33 08 PM" src="https://user-images.githubusercontent.com/54935006/235379315-de940fce-4c6d-45fc-9834-550ab139058e.png">
+
+
+Code Clone Detection Report On CPD:
+-----------------------------------
 
 
 
 
 
 
-
-
-
-
-
-
+How To Run Program On Terminal:
+-------------------------------
+       
+       1.Please make sure Python3 is installed before you start.
+       2.git clone https://github.com/yaaditya1267/CS5103_-vsw601-_-aman-yadav-
+       3.Change directory to where the folder is located. 
+       4.Enter 'python3 main.py' on terminal to run python file.
+       5.The program will execute and will print the output accordingly to the string taken as input. 
+       6.It will print the output.
+       7.To check code detection go to terminal and type pip/pip3 install pylint and go to that clone folder and type pylint main.py.
 
 
 
@@ -301,13 +344,6 @@ EXPECTED RESULTS
 
 Output: ONCE UPON A TIME 
 --------------------------------------------------------------------------------------------------------
-How to run program on Terminal :-
 
-Please make sure Python3 is installed before you start.
-
-Change directory to where 'main.py' is located. 
-Enter 'python3 main.py' on terminal to run python file.
-The program will execute and will print the output accordingly to the string taken as input. 
-It prints the count of unique words.
 
 
