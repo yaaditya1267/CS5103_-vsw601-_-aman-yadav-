@@ -1,6 +1,7 @@
 """
 Created by: Aman kumar yadav(vsw601)
 """
+import re
 import string
 
 
@@ -17,8 +18,29 @@ def merge_input(input_str):
     merged = ' '.join(merged.split())
     return f"({merged})"
 
+def replace_word(text, pattern, replacement):
+    """
+    It replaces the word.
+    """
+    pattern = rf'\b{re.escape(pattern)}\b'
+    return re.sub(pattern, replacement, text, flags=re.IGNORECASE)
+
+text = "Once upon a time someone came Once"
+pattern = "Once"
+replacement = "Twice"
+new_text = replace_word(text, pattern, replacement)
 
 
+def replace_word_in_first(text, pattern, replacement):
+    """
+    It replaces the word in first line only
+    """
+    # It splits the text into lines
+    lines = text.split("\n")
+    # It replaces the pattern with the replacement in the first line
+    lines[0] = lines[0].replace(pattern, replacement)
+    # It joins the lines back together
+    return "\n".join(lines)
 
 def count_lines_and_characters():
     """
@@ -81,12 +103,12 @@ def count_characters(text):
     """
     characters = 0
     for char in text:
-        if char != ' ' and char != '\n':
+        if char not in (' ','\n'):
             characters += 1
     return characters
 
 # Read input from file
-with open("input4.txt", "r", encoding="utf-8") as file:
+with open("input.txt", "r", encoding="utf-8") as file:
     text = file.read()
 
 
@@ -148,6 +170,9 @@ if __name__ == '__main__':
     char_count = count_characters(text)
 
     # It prints the count for each unique word.
+    print("-" * 25)
+    print("Text: Once upon a time someone came Once\nPattern: Once\nReplacement: Twice\n")
+    print(f"Final Output: {new_text}")
     print("-" * 25)
     print(f"Number of lines: {line_count}")
     print("-" * 25)
