@@ -1,5 +1,11 @@
 -------------------------
-Number of lines:      9
+Text: Once upon a time someone came Once
+Pattern: Once
+Replacement: Twice
+
+Final Output: Twice upon a time someone came Twice
+-------------------------
+Number of lines: 9
 -------------------------
 Number of characters: 50
 -------------------------
