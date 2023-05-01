@@ -1,8 +1,22 @@
-amanyadav@amans-mbp csaman % pylint main.py
+amanyadav@amans-mbp CS5103_AMANKUMARYADAV_VSW601 % pylint main.py
 ************* Module main
-main.py:32:8: W0621: Redefining name 'document' from outer scope (line 94) (redefined-outer-name)
+main.py:21:17: W0621: Redefining name 'text' from outer scope (line 28) (redefined-outer-name)
+main.py:21:23: W0621: Redefining name 'pattern' from outer scope (line 29) (redefined-outer-name)
+main.py:21:32: W0621: Redefining name 'replacement' from outer scope (line 30) (redefined-outer-name)
+main.py:28:0: C0103: Constant name "text" doesn't conform to UPPER_CASE naming style (invalid-name)
+main.py:29:0: C0103: Constant name "pattern" doesn't conform to UPPER_CASE naming style (invalid-name)
+main.py:30:0: C0103: Constant name "replacement" doesn't conform to UPPER_CASE naming style (invalid-name)
+main.py:82:50: W0621: Redefining name 'file' from outer scope (line 111) (redefined-outer-name)
+main.py:83:8: W0621: Redefining name 'document' from outer scope (line 163) (redefined-outer-name)
+main.py:92:16: W0621: Redefining name 'text' from outer scope (line 28) (redefined-outer-name)
+main.py:100:21: W0621: Redefining name 'text' from outer scope (line 28) (redefined-outer-name)
+main.py:120:50: W0621: Redefining name 'file' from outer scope (line 111) (redefined-outer-name)
+main.py:121:8: W0621: Redefining name 'text' from outer scope (line 28) (redefined-outer-name)
+main.py:124:4: W0621: Redefining name 'char_count' from outer scope (line 170) (redefined-outer-name)
+main.py:137:22: W0621: Redefining name 'text' from outer scope (line 28) (redefined-outer-name)
+main.py:170:4: C0103: Constant name "char_count" doesn't conform to UPPER_CASE naming style (invalid-name)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.78/10 (previous run: 9.56/10, +0.22)
+Your code has been rated at 9.12/10 (previous run: 8.61/10, +0.51)
 
-amanyadav@amans-mbp sd % 
+amanyadav@amans-mbp CS5103_AMANKUMARYADAV_VSW601 % 
