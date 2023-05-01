@@ -155,15 +155,8 @@ Code Detection/Bug Detection Report On SPYDER:
 
 Code Detection/Bug Detection Report On PYLINT:
 ----------------------------------------------
-<img width="787" alt="Screenshot 2023-04-30 at 8 08 48 PM" src="https://user-images.githubusercontent.com/54935006/235386815-c66bc48a-64c8-456c-a30a-a5a479eee1f1.png">
 
-
-
-Code Clone Detection Report On CPD:
------------------------------------
-
-
-
+<img width="1007" alt="Screenshot 2023-04-30 at 10 12 15 PM" src="https://user-images.githubusercontent.com/54935006/235396458-da4f4570-fb24-44f8-b751-e931c149aa2e.png">
 
 
 
